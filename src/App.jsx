@@ -7,7 +7,7 @@ export default function App() {
   const [todos, setTodos] = useState(() => {
     const localValue = localStorage.getItem("ITEMS")
     if (localValue == null) return []
-
+//provera da li je null
     return JSON.parse(localValue)
   })
 
